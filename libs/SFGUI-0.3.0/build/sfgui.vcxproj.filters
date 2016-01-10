@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Adjustment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Alignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Bin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\CheckButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Container.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Desktop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\CheckButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Notebook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ProgressBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Scale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Scrollbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ScrolledWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Separator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\SpinButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Spinner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ToggleButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\FileResourceLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Fixed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\GLCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\GLLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Notebook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Grammar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarPredicates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarSimpleSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarStatement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Primitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\PrimitiveTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\PrimitiveVertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\ProgressBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\RadioButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\RadioButtonGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Range.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\RenderQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\RendererViewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\NonLegacyRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\VertexArrayRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\VertexBufferRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\SFGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Scale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Scrollbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\ScrolledWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Separator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Signal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\SpinButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Spinner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\TableCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\TableOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\ToggleButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\libs\SFGUI-0.3.0\src\SFGUI\DejaVuSansFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Adjustment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Alignment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Bin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Box.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Button.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Canvas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\CheckButton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ComboBox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Container.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Context.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Desktop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Desktop.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Engine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Engine.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Engines\BREW.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Entry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\FileResourceLoader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Fixed.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Frame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Image.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Label.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Misc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Notebook.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Primitive.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\PrimitiveTexture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\PrimitiveVertex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ProgressBar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\RadioButton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\RadioButtonGroup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Range.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\RenderQueue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Renderers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\RendererTextureNode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\RendererViewport.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Renderers\NonLegacyRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Renderers\VertexArrayRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Renderers\VertexBufferRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ResourceLoader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ResourceManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ResourceManager.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\SFGUI.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Scale.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Scrollbar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ScrolledWindow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Selector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Separator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Signal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\SpinButton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Spinner.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\TableCell.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\TableOptions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\ToggleButton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Viewport.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Widgets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\include\SFGUI\Window.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\DejaVuSansFont.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\GLCheck.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\GLLoader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Grammar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Parse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\libs\SFGUI-0.3.0\src\SFGUI\RendererBatch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\libs\SFGUI-0.3.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B7B125EC-3A7A-346B-A732-0BD791F67CBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D2C89848-0F74-3441-B241-734FE2A85B6B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

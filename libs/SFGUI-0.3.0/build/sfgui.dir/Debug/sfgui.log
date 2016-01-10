@@ -1,0 +1,212 @@
+﻿Сборка начата 03.12.2015 10:18:26.
+     1>Проект "D:\libs\SFGUI-0.3.0\build\sfgui.vcxproj" в узле 2 (целевые объекты Build).
+     1>CustomBuild:
+         Building Custom Rule D:/libs/SFGUI-0.3.0/CMakeLists.txt
+         CMake does not need to re-run because D:\libs\SFGUI-0.3.0\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\\" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Adjustment.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Alignment.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Bin.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Box.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Canvas.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Container.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Context.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Desktop.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Engine.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\FileResourceLoader.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Fixed.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\GLCheck.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\GLLoader.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Misc.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Object.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Grammar.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarPredicates.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarSelector.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarSimpleSelector.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarStatement.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\GrammarToken.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Parsers\ThemeParser\Parse.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Primitive.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\PrimitiveTexture.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\PrimitiveVertex.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\RadioButton.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\RadioButtonGroup.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Range.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\RenderQueue.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Renderer.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\RendererViewport.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\NonLegacyRenderer.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\VertexArrayRenderer.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Renderers\VertexBufferRenderer.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\ResourceManager.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\SFGUI.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Selector.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Signal.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Table.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\TableCell.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\TableOptions.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Viewport.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\Widget.cpp" "D:\libs\SFGUI-0.3.0\src\SFGUI\DejaVuSansFont.cpp"
+         Adjustment.cpp
+         Alignment.cpp
+         Bin.cpp
+         Box.cpp
+         Canvas.cpp
+         Container.cpp
+         Context.cpp
+         Desktop.cpp
+         Engine.cpp
+         BREW.cpp
+         FileResourceLoader.cpp
+         Fixed.cpp
+         GLCheck.cpp
+         GLLoader.cpp
+         Misc.cpp
+         Object.cpp
+         Grammar.cpp
+         GrammarPredicates.cpp
+         GrammarSelector.cpp
+         GrammarSimpleSelector.cpp
+         Создание кода...
+         Компиляция...
+         GrammarStatement.cpp
+         GrammarToken.cpp
+         Parse.cpp
+         Primitive.cpp
+         PrimitiveTexture.cpp
+         PrimitiveVertex.cpp
+         RadioButton.cpp
+         RadioButtonGroup.cpp
+         Range.cpp
+         RenderQueue.cpp
+         Renderer.cpp
+         RendererViewport.cpp
+         NonLegacyRenderer.cpp
+         VertexArrayRenderer.cpp
+         VertexBufferRenderer.cpp
+         ResourceManager.cpp
+         SFGUI.cpp
+         Selector.cpp
+         Signal.cpp
+         Table.cpp
+         Создание кода...
+         Компиляция...
+         TableCell.cpp
+         TableOptions.cpp
+         Viewport.cpp
+         Widget.cpp
+         DejaVuSansFont.cpp
+         Создание кода...
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Button.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Button.cpp"
+         Button.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/CheckButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\CheckButton.cpp"
+         CheckButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/ComboBox.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\ComboBox.cpp"
+         ComboBox.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Button.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Button.cpp"
+         Button.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/CheckButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\CheckButton.cpp"
+         CheckButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ComboBox.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ComboBox.cpp"
+         ComboBox.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Entry.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Entry.cpp"
+         Entry.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Frame.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Frame.cpp"
+         Frame.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Image.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Image.cpp"
+         Image.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Label.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Label.cpp"
+         Label.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Notebook.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Notebook.cpp"
+         Notebook.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ProgressBar.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ProgressBar.cpp"
+         ProgressBar.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Scale.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Scale.cpp"
+         Scale.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Scrollbar.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Scrollbar.cpp"
+         Scrollbar.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ScrolledWindow.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ScrolledWindow.cpp"
+         ScrolledWindow.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Separator.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Separator.cpp"
+         Separator.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/SpinButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\SpinButton.cpp"
+         SpinButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Spinner.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Spinner.cpp"
+         Spinner.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ToggleButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\ToggleButton.cpp"
+         ToggleButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Window.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Engines\BREW\Window.cpp"
+         Window.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Entry.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Entry.cpp"
+         Entry.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Frame.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Frame.cpp"
+         Frame.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Image.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Image.cpp"
+         Image.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Label.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Label.cpp"
+         Label.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Notebook.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Notebook.cpp"
+         Notebook.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/ProgressBar.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\ProgressBar.cpp"
+         ProgressBar.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Scale.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Scale.cpp"
+         Scale.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Scrollbar.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Scrollbar.cpp"
+         Scrollbar.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/ScrolledWindow.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\ScrolledWindow.cpp"
+         ScrolledWindow.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Separator.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Separator.cpp"
+         Separator.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/SpinButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\SpinButton.cpp"
+         SpinButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Spinner.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Spinner.cpp"
+         Spinner.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/ToggleButton.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\ToggleButton.cpp"
+         ToggleButton.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\libs\SFGUI-0.3.0\include" /I"D:\libs\SFGUI-0.3.0\src" /I"D:\libs\SFML-2.3.2\include" /I"D:\libs\SFGUI-0.3.0\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Debug\/src/SFGUI/Window.cpp.obj" /Fd"sfgui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\libs\SFGUI-0.3.0\src\SFGUI\Window.cpp"
+         Window.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\libs\SFGUI-0.3.0\build\lib\Debug\sfgui-d.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\libs\SFML-2.3.2\lib\sfml-graphics-d.lib" "D:\libs\SFML-2.3.2\lib\sfml-window-d.lib" "D:\libs\SFML-2.3.2\lib\sfml-system-d.lib" opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/libs/SFGUI-0.3.0/build/lib/Debug/sfgui-d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/libs/SFGUI-0.3.0/build/lib/Debug/sfgui-d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug /DLL sfgui.dir\Debug\Adjustment.obj
+         sfgui.dir\Debug\Alignment.obj
+         sfgui.dir\Debug\Bin.obj
+         sfgui.dir\Debug\Box.obj
+         sfgui.dir\Debug\Canvas.obj
+         sfgui.dir\Debug\Container.obj
+         sfgui.dir\Debug\Context.obj
+         sfgui.dir\Debug\Desktop.obj
+         sfgui.dir\Debug\Engine.obj
+         sfgui.dir\Debug\BREW.obj
+         sfgui.dir\Debug\FileResourceLoader.obj
+         sfgui.dir\Debug\Fixed.obj
+         sfgui.dir\Debug\GLCheck.obj
+         sfgui.dir\Debug\GLLoader.obj
+         sfgui.dir\Debug\Misc.obj
+         sfgui.dir\Debug\Object.obj
+         sfgui.dir\Debug\Grammar.obj
+         sfgui.dir\Debug\GrammarPredicates.obj
+         sfgui.dir\Debug\GrammarSelector.obj
+         sfgui.dir\Debug\GrammarSimpleSelector.obj
+         sfgui.dir\Debug\GrammarStatement.obj
+         sfgui.dir\Debug\GrammarToken.obj
+         sfgui.dir\Debug\Parse.obj
+         sfgui.dir\Debug\Primitive.obj
+         sfgui.dir\Debug\PrimitiveTexture.obj
+         sfgui.dir\Debug\PrimitiveVertex.obj
+         sfgui.dir\Debug\RadioButton.obj
+         sfgui.dir\Debug\RadioButtonGroup.obj
+         sfgui.dir\Debug\Range.obj
+         sfgui.dir\Debug\RenderQueue.obj
+         sfgui.dir\Debug\Renderer.obj
+         sfgui.dir\Debug\RendererViewport.obj
+         sfgui.dir\Debug\NonLegacyRenderer.obj
+         sfgui.dir\Debug\VertexArrayRenderer.obj
+         sfgui.dir\Debug\VertexBufferRenderer.obj
+         sfgui.dir\Debug\ResourceManager.obj
+         sfgui.dir\Debug\SFGUI.obj
+         sfgui.dir\Debug\Selector.obj
+         sfgui.dir\Debug\Signal.obj
+         sfgui.dir\Debug\Table.obj
+         sfgui.dir\Debug\TableCell.obj
+         sfgui.dir\Debug\TableOptions.obj
+         sfgui.dir\Debug\Viewport.obj
+         sfgui.dir\Debug\Widget.obj
+         sfgui.dir\Debug\DejaVuSansFont.obj
+         sfgui.dir\Debug\/src/SFGUI/Button.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/CheckButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/ComboBox.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Button.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/CheckButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ComboBox.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Entry.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Frame.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Image.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Label.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Notebook.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ProgressBar.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Scale.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Scrollbar.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ScrolledWindow.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Separator.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/SpinButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Spinner.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/ToggleButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Engines/BREW/Window.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Entry.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Frame.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Image.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Label.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Notebook.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/ProgressBar.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Scale.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Scrollbar.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/ScrolledWindow.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Separator.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/SpinButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Spinner.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/ToggleButton.cpp.obj
+         sfgui.dir\Debug\/src/SFGUI/Window.cpp.obj
+            Создается библиотека D:/libs/SFGUI-0.3.0/build/lib/Debug/sfgui-d.lib и объект D:/libs/SFGUI-0.3.0/build/lib/Debug/sfgui-d.exp
+         sfgui.vcxproj -> D:\libs\SFGUI-0.3.0\build\lib\Debug\sfgui-d.dll
+     1>Сборка проекта "D:\libs\SFGUI-0.3.0\build\sfgui.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:02:10.19
