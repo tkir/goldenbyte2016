@@ -324,14 +324,13 @@ Entity::Entity(String _image, String _name, std::vector<tmx::MapObject>* _collis
 	pauseBeforHit = 0;
 	updateTime = 0;
 	persecutionID = 0;
-	//lvl = _collisionObj;
 	collisionObj = _collisionObj;
 	if (type != lettering && imageName != "")
 	{
 		image.loadFromFile(imageName);
 		texture.loadFromImage(image);
 		sprite.setTexture(texture);
-		sprite.setOrigin(width / 2, height / 2);
+		sprite.setOrigin(width / 2.f, 0);
 	}
 }
 void Entity::setTargetPosition(Vector2f _targetPosition)
@@ -984,6 +983,7 @@ class Player : public Entity
 {
 private:
 	std::list <Entity*>* entities;
+	tmx::MapObject* plObj;
 	Cursor* cursor;
 	int useSkill;
 	void loadProperties();
@@ -996,7 +996,7 @@ private:
 	void circumventObstacle(FloatRect _obstacle);
 public:
 	Player();
-	Player(String, String, std::list <Entity*>*, std::vector<tmx::MapObject>*, Vector2f, Cursor*);
+	Player(String, String, std::list <Entity*>*, std::vector<tmx::MapObject>*, tmx::MapObject*, Cursor*);
 	~Player();
 
 	void update(float);
@@ -1005,19 +1005,21 @@ public:
 	void plEvent(Event& event, Vector2f _mousePos);
 };
 Player::Player() :Entity(){};
-Player::Player(String _image, String name, std::list <Entity*>* _entities, std::vector<tmx::MapObject>* _collisionObj, Vector2f position, Cursor* _cursor) :Entity(_image, name, _collisionObj, position)
+Player::Player(String _image, String name, std::list <Entity*>* _entities, std::vector<tmx::MapObject>* _collisionObj, tmx::MapObject* _plObj, Cursor* _cursor) :Entity(_image, name, _collisionObj, position)
 {
 	type = player;
 	direction = stay;
 	entities = _entities;
 	cursor = _cursor;
+	plObj = _plObj;
 	width = 20.f;
 	height = 32.f;
 	useSkill = 0;
 	loadProperties();	
-
+	position = Vector2f(plObj->GetAABB().left, plObj->GetAABB().top);
 	sprite.setTextureRect(IntRect(70, 65, (int)width, (int)height));
-	sprite.setPosition(position.x + width / 2, position.y + height / 2);
+	sprite.setPosition(position.x, position.y - height / 2.f);
+	sprite.setOrigin(width / 2.f, 0);
 }
 void Player::loadProperties()
 {
@@ -1109,6 +1111,7 @@ void Player::update(float _time)
 
 	switchDirection();
 	setProperties();
+	plObj->SetPosition(position);
 }
 void Player::switchDirection()
 {
@@ -1139,7 +1142,7 @@ void Player::switchDirection()
 		curentFrame += 0.008f*updateTime;
 		if (curentFrame > 3)curentFrame = 0;
 		sprite.setTextureRect(IntRect(70 + (int)curentFrame * 26, 65, 20, 33));
-		if (sprite.getScale().x < 0) sprite.setScale(1, 1);
+		if (sprite.getScale().x < 0) sprite.setScale(1, 1); 
 		break;
 	}
 	case left:
@@ -1249,7 +1252,7 @@ void Player::switchDirection()
 		checkCollision({ dPos.x, 0.0f });
 		position.y += dPos.y*updateTime;
 		checkCollision({ 0.0f, dPos.y });
-		sprite.setPosition(position.x + width / 2.0f, position.y + height / 2.0f);
+		sprite.setPosition(position.x, position.y - height / 2.0f);
 		if (prop.health < 1)isLife = false;
 	}
 }
@@ -1262,11 +1265,15 @@ inline void Player::checkCollisionMap(Vector2f _dPos)
 {
 	for (auto it : *collisionObj)
 	{
+		if (it.Intersects(*plObj))
+		{
+			std::cout << "intersects" << std::endl;
+		}
 		if (getRect().intersects(it.GetAABB()))
 		{
 			//circumventObstacle(it->rect); //not work (:
 
-			if (_dPos.y > 0.0f){ position.y = it.GetAABB().top - height; dPos.y = 0.0f; }
+			/*if (_dPos.y > 0.0f){ position.y = it.GetAABB().top - height; dPos.y = 0.0f; }
 			else if (_dPos.y < 0.0f){ position.y = it.GetAABB().top + it.GetAABB().height; dPos.y = 0.0f; }
 			else if (_dPos.x > 0.0f){ position.x = it.GetAABB().left - width; dPos.x = 0.0f; }
 			else if (_dPos.x < 0.0f){ position.x = it.GetAABB().left + it.GetAABB().width; dPos.x = 0.0f; }
@@ -1276,7 +1283,7 @@ inline void Player::checkCollisionMap(Vector2f _dPos)
 				targetPosition = { 0.f, 0.f };
 				direction = stay;
 			}
-			else setTargetPosition(targetPosition);		
+			else setTargetPosition(targetPosition);	*/	
 		}
 	}
 }
@@ -2716,7 +2723,7 @@ GameInit::GameInit()
 			{
 				if (object->GetType() == "player")
 				{
-					Player1 = new Player("images/SoMHero.png", object->GetName(), entities, &collisionObj, object->GetPosition(), cursor);
+					Player1 = new Player("images/SoMHero.png", object->GetName(), entities, &collisionObj, &(*object), cursor);
 					entities->push_back(Player1);
 				}
 				else if (object->GetType() == "enemy")

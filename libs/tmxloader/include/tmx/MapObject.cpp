@@ -101,8 +101,8 @@ void MapObject::Move(const sf::Vector2f& distance)
 {
 	//update properties by movement amount
 	m_centrePoint += distance;
-	for(auto& p : m_polypoints)
-		p += distance;
+	/*for(auto& p : m_polypoints)                  //in origin uncomment, changed by tkir
+		p += distance;*/
 
 	m_debugShape.move(distance);
 
@@ -144,7 +144,7 @@ bool MapObject::Contains(sf::Vector2f point) const
 bool MapObject::Intersects(const MapObject& object) const
 {
 	//check if distance between objects is less than sum of furthest points
-	float distance = Helpers::Vectors::getLength(m_centrePoint + object.m_centrePoint);
+	float distance = Helpers::Vectors::getLength(m_centrePoint - object.m_centrePoint); //in original (+) changed by tkir
 	if(distance > (m_furthestPoint + object.m_furthestPoint)) return false;
 
 	//check intersection if either object contains a point of the other
@@ -285,7 +285,8 @@ void MapObject::SetQuad(TileQuad* quad)
 //private
 sf::Vector2f MapObject::CalcCentre() const
 {
-	if(m_shape == Polyline) return sf::Vector2f();
+#pragma region comment by tkir
+	/*if(m_shape == Polyline) return sf::Vector2f();
 
 	if(m_shape == Rectangle || m_polypoints.size() < 3)
 	{
@@ -331,6 +332,12 @@ sf::Vector2f MapObject::CalcCentre() const
 
 	//convert to world space
 	centroid += m_position;
+	return centroid;*/
+#pragma endregion
+
+	sf::Vector2f centroid;	
+	centroid = (m_polypoints[0] + m_polypoints[2]) / 2.f;
+	centroid += sf::Vector2f(m_AABB.left, m_AABB.top);
 	return centroid;
 }
 
@@ -339,7 +346,7 @@ void MapObject::CalcTestValues()
 	m_centrePoint = CalcCentre();
 	for(auto i = m_polypoints.cbegin(); i != m_polypoints.cend(); ++i)
 	{
-		float length = Helpers::Vectors::getLength(*i - m_centrePoint);
+		float length = Helpers::Vectors::getLength(*i + sf::Vector2f(m_AABB.left, m_AABB.top) - m_centrePoint);
 		if(m_furthestPoint < length)
 		{
 			m_furthestPoint = length;
