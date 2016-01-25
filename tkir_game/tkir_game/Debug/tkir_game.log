@@ -1,6 +1,38 @@
-﻿Сборка начата 12.01.2016 22:56:02.
+﻿Сборка начата 25.01.2016 20:56:19.
      1>Проект "D:\Game\tkir_game\tkir_game\tkir_game.vcxproj" в узле 2 (целевые объекты Build).
-     1>Link:
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"..\..\libs\zlib-1.2.8" /I..\..\libs\tmxloader\include /I"..\..\libs\SFGUI-0.3.0\include" /I"..\..\libs\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Load_Singleton.cpp PathFinder.cpp main.cpp
+         Load_Singleton.cpp
+     1>d:\game\tkir_game\tkir_game\load_singleton.cpp(5): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         Создание кода...
+         Компиляция...
+         main.cpp
+     1>d:\game\tkir_game\tkir_game\main.cpp(533): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(610): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(820): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1276): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1285): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1287): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1538): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1540): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1620): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(1876): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\game\tkir_game\tkir_game\main.cpp(2089): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>d:\game\tkir_game\tkir_game\main.cpp(2255): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(2256): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(2483): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>d:\game\tkir_game\tkir_game\main.cpp(2691): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\main.cpp(2813): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         PathFinder.cpp
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(35): warning C4244: аргумент: преобразование "size_t" в "float", возможна потеря данных
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(70): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(71): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(148): warning C4101: isGetStart: неиспользованная локальная переменная
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(263): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         Создание кода...
+     1>d:\game\tkir_game\tkir_game\pathfinder.cpp(73): warning C4715: MiniMap::getMiniPositionEntyty: значение возвращается не при всех путях выполнения
+     1>d:\game\tkir_game\tkir_game\main.cpp(113): warning C4715: Properties::Skills::getSkillLevel: значение возвращается не при всех путях выполнения
+       Link:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Game\tkir_game\Debug\tkir_game.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\..\libs\zlib-1.2.8\lib" /LIBPATH:"..\..\libs\SFGUI-0.3.0\lib" /LIBPATH:"..\..\libs\SFML-2.3.2\lib" "sfml-audio-d.lib" "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" "sfgui-d.lib" zlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Game\tkir_game\Debug\tkir_game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Game\tkir_game\Debug\tkir_game.lib" /MACHINE:X86 Debug\pugixml.obj
          Debug\DebugShape.obj
          Debug\MapLayer.obj
@@ -8,10 +40,12 @@
          Debug\MapLoaderPublic.obj
          Debug\MapObject.obj
          Debug\QuadTreeNode.obj
+         Debug\Load_Singleton.obj
          Debug\main.obj
+         Debug\PathFinder.obj
          tkir_game.vcxproj -> D:\Game\tkir_game\Debug\tkir_game.exe
      1>Сборка проекта "D:\Game\tkir_game\tkir_game\tkir_game.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:01.65
+Затраченное время: 00:00:11.76

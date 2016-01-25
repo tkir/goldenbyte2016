@@ -89,7 +89,9 @@ namespace tmx
 		//returns top left corner of bounding rectangle
 		sf::Vector2f GetPosition() const {return m_position;}
 		//returns precomputed centre of mass, or zero for polylines
-		sf::Vector2f GetCentre() const {return m_centrePoint;};
+		sf::Vector2f GetCentre() const {return m_centrePoint;}
+		float GetFurthestPoint()const{ return m_furthestPoint; }		//changet by tkir
+		std::vector<sf::Vector2f>& GetPolipoints(){ return m_polypoints; }	//changet by tkir
 		//returns the type of shape of the object
 		MapObjectShape GetShapeType() const {return m_shape;};
 		//returns and object's name

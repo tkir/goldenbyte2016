@@ -1,104 +1,4 @@
-#include <SFGUI/SFGUI.hpp>
-#include <SFGUI/Widgets.hpp>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <tmx/MapLoader.h>
-#include <iostream>
-#include <vector>
-#include <list>
-using namespace sf;
-
-enum skillType{ otherType, noImage, musicOn, musicOff, webThrow, strength, silence, horror, gainArmor, sword, lance, fireBall, fireBurst, purpleBall };
-
-class Entity;
-class GameView;
-class SF_Desk;
-class SFGUI_Entity;
-class Player;
-class Skill;
-class SFGUI_Window;
-class FireBall;
-class Footer;
-class MainMenu;
-class OptionMenu;
-
-class Load_Singleton
-{
-private:
-	static Load_Singleton* singleton;
-	Load_Singleton();
-	Load_Singleton(const Load_Singleton&);
-	Load_Singleton& operator=(Load_Singleton&);
-
-
-	Font font;
-
-	SoundBuffer bufferShot;
-	Sound soundShot;
-	SoundBuffer bufferPlayerDamage;
-	Sound soundPlayerDamage;
-	SoundBuffer bufferEnemyDamage;
-	Sound soundEnemyDamage;
-	float soundVolume;
-
-	Music music;
-
-	int experienceLevelArray[5];
-
-public:
-
-	static Load_Singleton * getInstance() {
-		if (!singleton)
-			singleton = new Load_Singleton();
-		return singleton;
-	}
-
-	Font* getFont(){ return &font; }
-
-	Sound* getSoundShot(){ return &soundShot; }
-	Sound* getSoundPlayerDamage(){ return &soundPlayerDamage; }
-	Sound* getSoundEnemyDamage(){ return &soundEnemyDamage; }
-	float getSoundVolume(){ return soundVolume; }
-	void setSoundVolume(float _volume);
-	Music* takeMusic();
-	Music* getMusic(){ return &music; }
-	int getExperienceLevel(int level){ return experienceLevelArray[level]; }
-};
-Load_Singleton::Load_Singleton()
-{
-	srand(time(NULL));
-
-	font.loadFromFile("files/CyrilicOld.TTF");
-
-	bufferShot.loadFromFile("files/sound/shot.flac");
-	soundShot.setBuffer(bufferShot);
-	bufferPlayerDamage.loadFromFile("files/sound/playerDamage.wav");
-	soundPlayerDamage.setBuffer(bufferPlayerDamage);
-	bufferEnemyDamage.loadFromFile("files/sound/enemyDamage.wav");
-	soundEnemyDamage.setBuffer(bufferEnemyDamage);
-	setSoundVolume(100.f);
-
-	experienceLevelArray[0] = 0;
-	experienceLevelArray[1] = 3;
-	experienceLevelArray[2] = 10;
-	experienceLevelArray[3] = 30;
-	experienceLevelArray[4] = 10000;//чтоб не вылететь за массив
-}
-void Load_Singleton::setSoundVolume(float _volume)
-{
-	soundVolume = _volume;
-	soundShot.setVolume(soundVolume);
-	soundPlayerDamage.setVolume(soundVolume);
-	soundEnemyDamage.setVolume(soundVolume);
-}
-Music* Load_Singleton::takeMusic()
-{
-	char tmp[10]; _itoa_s(rand() % 4 + 1, tmp, 10);
-	std::string str; str = "files/music/music_"; str += tmp; str += ".wav";
-	music.openFromFile(str);
-	return &music;
-}
-Load_Singleton* Load_Singleton::singleton = nullptr;
+#include "include.h"
 
 struct Properties
 {
@@ -984,8 +884,13 @@ class Player : public Entity
 private:
 	std::list <Entity*>* entities;
 	tmx::MapObject* plObj;
+	MiniMap* miniMap;
 	Cursor* cursor;
 	int useSkill;
+	std::shared_ptr<PathFinder> path;
+	std::vector<sf::Vector2f> smoothPath;
+	std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<Vector2f>>> smoothPath_iter;
+
 	void loadProperties();
 	void control();
 	void switchDirection();
@@ -994,9 +899,10 @@ private:
 	void checkCollisionEnemy(Vector2f);
 	void setProperties();
 	void circumventObstacle(FloatRect _obstacle);
+	
 public:
 	Player();
-	Player(String, String, std::list <Entity*>*, std::vector<tmx::MapObject>*, tmx::MapObject*, Cursor*);
+	Player(String, String, std::list <Entity*>*, std::vector<tmx::MapObject>*, tmx::MapObject*, MiniMap*, Cursor*);
 	~Player();
 
 	void update(float);
@@ -1005,13 +911,14 @@ public:
 	void plEvent(Event& event, Vector2f _mousePos);
 };
 Player::Player() :Entity(){};
-Player::Player(String _image, String name, std::list <Entity*>* _entities, std::vector<tmx::MapObject>* _collisionObj, tmx::MapObject* _plObj, Cursor* _cursor) :Entity(_image, name, _collisionObj, position)
+Player::Player(String _image, String name, std::list <Entity*>* _entities, std::vector<tmx::MapObject>* _collisionObj, tmx::MapObject* _plObj, MiniMap* _miniMap, Cursor* _cursor) :Entity(_image, name, _collisionObj, position)
 {
 	type = player;
 	direction = stay;
 	entities = _entities;
+	miniMap = _miniMap;	
 	cursor = _cursor;
-	plObj = _plObj;
+	plObj = _plObj;	
 	width = 20.f;
 	height = 32.f;
 	useSkill = 0;
@@ -1020,6 +927,7 @@ Player::Player(String _image, String name, std::list <Entity*>* _entities, std::
 	sprite.setTextureRect(IntRect(70, 65, (int)width, (int)height));
 	sprite.setPosition(position.x, position.y - height / 2.f);
 	sprite.setOrigin(width / 2.f, 0);
+	path = std::make_shared<PathFinder>(plObj, miniMap, &smoothPath);
 }
 void Player::loadProperties()
 {
@@ -1084,12 +992,6 @@ void Player::update(float _time)
 
 	if (targetPosition.x || targetPosition.y)
 	{
-		if (persecutionID)
-		{
-			for (auto it : *entities)
-				if (it->getID() == persecutionID)
-					setTargetPosition(it->getPosition());
-		}
 		dPos = targetVector*prop.speed;
 		if (targetVector.y<0.707107f && targetVector.y>-0.707107f)
 		{
@@ -1112,6 +1014,16 @@ void Player::update(float _time)
 	switchDirection();
 	setProperties();
 	plObj->SetPosition(position);
+
+	if (!smoothPath.empty())
+	{
+		if (fabsf(position.x - (*smoothPath_iter).x) < 1.5f && fabsf(position.y - (*smoothPath_iter).y) < 1.5f)
+		{
+			if (smoothPath_iter != smoothPath.cend() - 1)
+				setTargetPosition(*(++smoothPath_iter));
+			else smoothPath.clear();
+		}
+	}
 }
 void Player::switchDirection()
 {
@@ -1267,7 +1179,7 @@ inline void Player::checkCollisionMap(Vector2f _dPos)
 	{
 		if (it.Intersects(*plObj))
 		{
-			std::cout << "intersects" << std::endl;
+			//std::cout << "intersects" << std::endl;
 		}
 		if (getRect().intersects(it.GetAABB()))
 		{
@@ -1403,14 +1315,21 @@ void Player::plEvent(Event& event, Vector2f _mousePos)
 			}
 			else
 			{
-				for (auto it = entities->begin(); it != entities->end(); ++it)
+				/*for (auto it = entities->begin(); it != entities->end(); ++it)
 				{
 					if ((*it)->getType() == enemy)
 						if ((*it)->getRect().contains(_mousePos))
 							setPersecution((*it)->getID());
 						else setPersecution(0);
 				}
-				setTargetPosition(_mousePos);
+				setTargetPosition(_mousePos);*/
+
+				path->aStar(_mousePos);
+				if (smoothPath.empty() == false)
+				{
+					smoothPath_iter = smoothPath.cbegin();
+					setTargetPosition(*smoothPath_iter);
+				}
 			}
 		}
 	}
@@ -2683,15 +2602,15 @@ private:
 	Clock clock;
 	GameView* view;
 	tmx::MapLoader* IsoMap;
-	//Level lvl;
 	Event event;
 	Player* Player1;
+	MiniMap mini;
 	SF_Desk sfgui_desktop;
 	Cursor* cursor;
 	std::vector<tmx::MapObject> collisionObj;
 	std::list <Entity*>* entities;
 	std::list<std::shared_ptr<SFGUI_Entity>>* sf_entities;
-
+	
 	void loadEntities();
 	void switchEvent();
 	void drowEntities();
@@ -2714,21 +2633,33 @@ GameInit::GameInit()
 	cursor = new Cursor(entities);
 
 	IsoMap = new tmx::MapLoader("maps/");	
-	IsoMap->Load("isometric_grass_and_water.tmx");
+	IsoMap->Load("isometric_grass_and_water.tmx"/*"map4.tmx"*/);
+	
 	for (auto layer = IsoMap->GetLayers().begin(); layer != IsoMap->GetLayers().end(); ++layer)
 	{
+		if (layer->name == "Collision_static")
+		{
+			for (auto object = layer->objects.begin(); object != layer->objects.end(); ++object)
+			{
+				collisionObj.push_back(*object);
+			}
+			mini.create(IsoMap->GetMapSize(), 16, &collisionObj);
+		}
+	}
+	for (auto layer = IsoMap->GetLayers().begin(); layer != IsoMap->GetLayers().end(); ++layer)
+	{
+
 		if (layer->name == "Collision")
 		{
 			for (auto object = layer->objects.begin(); object != layer->objects.end(); ++object)
 			{
 				if (object->GetType() == "player")
 				{
-					Player1 = new Player("images/SoMHero.png", object->GetName(), entities, &collisionObj, &(*object), cursor);
+					Player1 = new Player("images/SoMHero.png", object->GetName(), entities, &collisionObj, &(*object), &mini, cursor);
 					entities->push_back(Player1);
 				}
 				else if (object->GetType() == "enemy")
 					entities->push_front(new Enemy("images/enemy_tileset.png", object->GetName(), entities, &collisionObj, object->GetPosition()));
-				else collisionObj.push_back(*object);
 			}
 		}
 	}
@@ -2827,7 +2758,7 @@ void GameInit::switchEvent()
 	else if (event.type == Event::Closed)endGame();
 }
 void GameInit::drowEntities()
-{
+{	
 	for (auto it = entities->begin(); it != entities->end();)
 	{
 		if (isGamePause)
@@ -2855,6 +2786,7 @@ void GameInit::drowEntities()
 	}
 
 	window.draw(cursor->getSprite());
+	
 }
 void GameInit::endGame()
 {
@@ -2874,6 +2806,7 @@ void GameInit::endGame()
 	delete view;
 	window.close();
 }
+
 
 int main()
 {

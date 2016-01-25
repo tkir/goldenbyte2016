@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" renderorder="left-up" width="20" height="10" tilewidth="64" tileheight="32" nextobjectid="6">
+ <tileset firstgid="1" name="tileset_desert" tilewidth="64" tileheight="32">
+  <image source="tileset_desert.png" trans="55557f" width="1024" height="1129"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBzFo3gUY8UAPT8AyQ==
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAfqFGgV4wJU+wTEJuRYZYo1Cw1LGYyMTIwuJFhpioWs0DAEGieKyPx5mzGIjYRSjsCzfEAYncgDsVh5k0S7AKBCEYIDsej7yUeuR9ockaMCIwP/CTSnRuJUzZoAADChwsG
+  </data>
+ </layer>
+ <objectgroup name="Collision">
+  <object id="3" x="97.3664" y="0.789761" width="10" height="10"/>
+  <object id="5" name="player1" type="player" x="197" y="35" width="16" height="16"/>
+ </objectgroup>
+</map>

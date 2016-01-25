@@ -88,7 +88,9 @@
     <ClCompile Include="..\..\libs\tmxloader\include\tmx\MapLoaderPublic.cpp" />
     <ClCompile Include="..\..\libs\tmxloader\include\tmx\MapObject.cpp" />
     <ClCompile Include="..\..\libs\tmxloader\include\tmx\QuadTreeNode.cpp" />
+    <ClCompile Include="Load_Singleton.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PathFinder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\libs\tmxloader\include\pugixml\pugiconfig.hpp" />
@@ -100,6 +102,10 @@
     <ClInclude Include="..\..\libs\tmxloader\include\tmx\MapLoader.h" />
     <ClInclude Include="..\..\libs\tmxloader\include\tmx\MapObject.h" />
     <ClInclude Include="..\..\libs\tmxloader\include\tmx\QuadTreeNode.h" />
+    <ClInclude Include="include.h" />
+    <ClInclude Include="Load_Singleton.h" />
+    <ClInclude Include="PathFinder.h" />
+    <ClInclude Include="Properties.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

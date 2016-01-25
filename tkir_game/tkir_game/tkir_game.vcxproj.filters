@@ -45,6 +45,12 @@
     <ClCompile Include="..\..\libs\tmxloader\include\tmx\QuadTreeNode.cpp">
       <Filter>Файлы ресурсов\tmx</Filter>
     </ClCompile>
+    <ClCompile Include="Load_Singleton.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinder.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\libs\tmxloader\include\pugixml\pugiconfig.hpp">
@@ -73,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="..\..\libs\tmxloader\include\tmx\QuadTreeNode.h">
       <Filter>Файлы ресурсов\tmx</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Load_Singleton.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinder.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Properties.h">
+      <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
